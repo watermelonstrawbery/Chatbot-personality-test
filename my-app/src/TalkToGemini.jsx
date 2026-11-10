@@ -8,7 +8,7 @@ function TalkToGemini(){
     async function AskAI(){
         const { GoogleGenerativeAI } = require("@google/generative-ai");
           
-        const genAI = new GoogleGenerativeAI("AIzaSyDSsPu7iKIYT26cl25oImCmynkusxdfj4I");
+        const genAI = new GoogleGenerativeAI("your_API_key");
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
           
         const prompt = "Tell me a short joke";
